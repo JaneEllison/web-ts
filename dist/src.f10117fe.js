@@ -170,8 +170,8 @@ function () {
       throw new Error('Cannot fetch without an id');
     }
 
-    this.sync.fetch(id).then(function (responce) {
-      _this.set(responce.data);
+    this.sync.fetch(id).then(function (response) {
+      _this.set(response.data);
     });
   };
 
